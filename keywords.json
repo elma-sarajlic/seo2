@@ -1,0 +1,374 @@
+{
+  "domain": "assemblymaker.com",
+  "target_audience": "Hardware creators, manufacturing teams, SaaS builders, and product documentation specialists",
+  "primary_clusters": {
+    "software_and_tools": [
+      {
+        "keyword": "software user manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "software user guide template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "software manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "user manual software",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 5
+      },
+      {
+        "keyword": "user guide software",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 5
+      },
+      {
+        "keyword": "software instruction manual template",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "create instructions",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 6
+      },
+      {
+        "keyword": "manual software",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 10
+      },
+      {
+        "keyword": "instruction maker",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 10
+      },
+      {
+        "keyword": "step by step guide generator",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 10
+      },
+      {
+        "keyword": "manual creation software",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 14
+      },
+      {
+        "keyword": "user manual creation software",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 14
+      },
+      {
+        "keyword": "user manual for software application",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 14
+      },
+      {
+        "keyword": "user guide creation software",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 14
+      },
+      {
+        "keyword": "manual making software",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 14
+      }
+    ],
+    "templates_and_examples": [
+      {
+        "keyword": "step by step instructions examples",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "user guide examples",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "app user manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "user manual examples",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "user guide samples",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "application user manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "application user guide template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "app user guide template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "instruction manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 6
+      },
+      {
+        "keyword": "instruction guide template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 6
+      },
+      {
+        "keyword": "owners manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 6
+      },
+      {
+        "keyword": "user manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 7
+      },
+      {
+        "keyword": "user guide template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 7
+      },
+      {
+        "keyword": "user guide manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 7
+      },
+      {
+        "keyword": "training manual template",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 30
+      }
+    ],
+    "assembly_and_product_instructions": [
+      {
+        "keyword": "assembly instructions",
+        "avg_monthly_searches": 50000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "installation manual",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "installation instructions",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "installation guides",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "manufacturing instructions",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "product instructions",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "assembly tutorial",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 2
+      },
+      {
+        "keyword": "assembly furniture",
+        "avg_monthly_searches": 5000,
+        "competition": "High",
+        "competition_index": 100
+      },
+      {
+        "keyword": "instructions for assembly",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "assembly instructions manual",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "build assembly",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 2
+      },
+      {
+        "keyword": "bike installation",
+        "avg_monthly_searches": 500,
+        "competition": "Low",
+        "competition_index": 13
+      },
+      {
+        "keyword": "diy assembly",
+        "avg_monthly_searches": 500,
+        "competition": "High",
+        "competition_index": 97
+      },
+      {
+        "keyword": "online assembly instructions",
+        "avg_monthly_searches": 50,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "3d assembly instructions",
+        "avg_monthly_searches": 50,
+        "competition": "Low",
+        "competition_index": 2
+      }
+    ],
+    "general_user_manuals_and_guides": [
+      {
+        "keyword": "user manual guide",
+        "avg_monthly_searches": 500000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "user manual",
+        "avg_monthly_searches": 50000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "instruction manual",
+        "avg_monthly_searches": 50000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "digital manuals",
+        "avg_monthly_searches": 50000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "manuals pdf",
+        "avg_monthly_searches": 50000,
+        "competition": "Low",
+        "competition_index": 2
+      },
+      {
+        "keyword": "user manual pdf",
+        "avg_monthly_searches": 50000,
+        "competition": "Low",
+        "competition_index": 2
+      },
+      {
+        "keyword": "user guides",
+        "avg_monthly_searches": 50000,
+        "competition": "Low",
+        "competition_index": 2
+      },
+      {
+        "keyword": "step by step instructions",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "user guide documentation",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "user instructions",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "manual of me",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 0
+      },
+      {
+        "keyword": "step by step guide",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "instruction manuals pdf",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "technical manuals",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      },
+      {
+        "keyword": "guide step by step",
+        "avg_monthly_searches": 5000,
+        "competition": "Low",
+        "competition_index": 1
+      }
+    ]
+  }
+}
