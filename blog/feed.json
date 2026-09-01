@@ -11,5 +11,18 @@
     "keyword_cluster": "assembly_and_product_instructions",
     "content_angle": "practical guide",
     "image_path": "examples/agv.png"
+  },
+  {
+    "slug": "digital-manuals-3d-assembly-guide",
+    "path": "blog/digital-manuals-3d-assembly-guide.html",
+    "title": "Creating Interactive Digital Manuals from 3D CAD: A Practical Guide",
+    "excerpt": "Discover how modern hardware and engineering teams build interactive digital manuals from 3D CAD models using free, browser-based tools without complex software.",
+    "category": "Digital manuals",
+    "published": "2026-09-01",
+    "display_date": "September 1, 2026",
+    "primary_keyword": "digital manuals",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "owner-specified topic",
+    "image_path": "assets/how-it-works-workshop.png"
   }
 ]

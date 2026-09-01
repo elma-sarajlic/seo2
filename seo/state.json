@@ -1,5 +1,5 @@
 {
-  "last_cluster": "assembly_and_product_instructions",
+  "last_cluster": "general_user_manuals_and_guides",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -8,6 +8,14 @@
       "slug": "how-to-write-clear-assembly-instructions",
       "published": "2026-09-01",
       "generated_at": "2026-09-01T05:59:56+00:00"
+    },
+    {
+      "keyword": "digital manuals",
+      "cluster": "general_user_manuals_and_guides",
+      "angle": "owner-specified topic",
+      "slug": "digital-manuals-3d-assembly-guide",
+      "published": "2026-09-01",
+      "generated_at": "2026-09-01T19:38:38+00:00"
     }
   ]
 }
