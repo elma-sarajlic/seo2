@@ -18,18 +18,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  generate-and-deploy:
+  generate-and-submit-draft:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL || 'gemini-2.5-flash' }}
-      FTP_HOST: ${{ secrets.FTP_HOST }}
-      FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-      FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-      FTP_REMOTE_ROOT: ${{ vars.FTP_REMOTE_ROOT || '/assemblymaker.com' }}
-      FTP_PORT: ${{ vars.FTP_PORT || '21' }}
-      FTP_TLS: ${{ vars.FTP_TLS || 'true' }}
+      ASSEMBLY_REVIEW_API_URL: ${{ vars.ASSEMBLY_REVIEW_API_URL || 'https://assemblymaker.com/api/seo-review.php?route=' }}
+      REVIEW_API_TOKEN: ${{ secrets.REVIEW_API_TOKEN }}
+      NOTIFICATION_WEBHOOK_URL: ${{ secrets.NOTIFICATION_WEBHOOK_URL }}
 
     steps:
       - name: Check out website source
@@ -48,11 +45,11 @@ jobs:
         run: |
           python - <<'PY'
           import os
-          required = ["GEMINI_API_KEY", "FTP_HOST", "FTP_USERNAME", "FTP_PASSWORD"]
+          required = ["GEMINI_API_KEY", "REVIEW_API_TOKEN"]
           missing = [name for name in required if not os.getenv(name, "").strip()]
           if missing:
               raise SystemExit("Missing GitHub Actions secrets: " + ", ".join(missing))
-          print("Required generation and cPanel deployment secrets are present.")
+          print("Required generation and review API secrets are present.")
           PY
 
       - name: Install generator
@@ -65,7 +62,7 @@ jobs:
 
       - name: Validate generated website files
         run: |
-          python -m py_compile seo/generate_article.py seo/deploy_ftp.py
+          python -m py_compile seo/generate_article.py seo/submit_draft.py
           python -m unittest tests.test_seo_generator
           git diff --check
 
@@ -73,13 +70,13 @@ jobs:
         run: |
           git config user.name "assemblymaker-seo-bot"
           git config user.email "seo-bot@assemblymaker.com"
-          git add blog blog.html sitemap.xml seo/state.json seo/deploy-manifest.json
+          git add blog blog.html sitemap.xml seo/state.json seo/draft-payload.json
           if git diff --cached --quiet; then
-            echo "No new article changes to commit. The existing deploy manifest will be retried."
+            echo "No new article changes to commit. The existing draft payload will be retried."
           else
-            git commit -m "Publish daily Assembly Maker article"
+            git commit -m "Create daily Assembly Maker article draft"
             git push
           fi
 
-      - name: Upload article to cPanel
-        run: python seo/deploy_ftp.py
+      - name: Submit article for image and approval
+        run: python seo/submit_draft.py
