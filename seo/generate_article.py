@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
 import math
@@ -27,7 +28,7 @@ TEMPLATE_PATH = SEO_DIR / "article-template.html"
 BLOG_INDEX_PATH = ROOT / "blog.html"
 SITEMAP_PATH = ROOT / "sitemap.xml"
 FEED_PATH = BLOG_DIR / "feed.json"
-DEPLOY_MANIFEST_PATH = SEO_DIR / "deploy-manifest.json"
+DRAFT_PAYLOAD_PATH = SEO_DIR / "draft-payload.json"
 
 BLOG_START = "<!-- SEO-ARTICLES:START -->"
 BLOG_END = "<!-- SEO-ARTICLES:END -->"
@@ -227,8 +228,32 @@ def build_prompt(choice: KeywordChoice, image: dict[str, Any], config: dict[str,
     category = config.get("category_labels", {}).get(choice.cluster, "Product documentation")
     facts = "\n".join(f"- {fact}" for fact in config.get("brand_facts", []))
     internal_links = "\n".join(f"- {link}" for link in config.get("allowed_internal_links", []))
+    custom_template = ""
+    encoded_template = os.getenv("ARTICLE_PROMPT_TEMPLATE_B64", "").strip()
+    if encoded_template:
+        custom_template = base64.b64decode(encoded_template).decode("utf-8").strip()
+        custom_template = custom_template.replace("{topic}", choice.keyword)
+        custom_template = custom_template.replace("{word_count}", str(config.get("article_word_count", 1200)))
+        custom_template = custom_template.replace("{audience}", "hardware creators, manufacturing teams, SaaS builders, and product-documentation specialists")
+        custom_template = custom_template.replace("{brand_context}", facts)
+    custom_categories = ""
+    encoded_categories = os.getenv("CONTENT_CATEGORIES_B64", "").strip()
+    if encoded_categories:
+        categories = json.loads(base64.b64decode(encoded_categories).decode("utf-8"))
+        custom_categories = "\n".join(
+            f"- {item.get('label', '')}: {', '.join(item.get('keywords', []))}"
+            for item in categories
+            if isinstance(item, dict)
+        )
+        custom_template = custom_template.replace("{categories}", custom_categories)
     return f"""
 Write an original, publication-ready SEO article for assemblymaker.com.
+
+Owner's saved editorial direction:
+{custom_template or 'Use the standard Assembly Maker editorial requirements below.'}
+
+Saved content categories:
+{custom_categories or category}
 
 Primary keyword: {choice.keyword}
 Keyword cluster: {choice.cluster}
@@ -631,16 +656,67 @@ def publish_article(
     state["last_cluster"] = choice.cluster
     state["generated"] = generated
     write_json(STATE_PATH, state)
-    write_json(DEPLOY_MANIFEST_PATH, {
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "files": [
-            str(article_path.relative_to(ROOT)).replace("\\", "/"),
-            str(FEED_PATH.relative_to(ROOT)).replace("\\", "/"),
-            str(BLOG_INDEX_PATH.relative_to(ROOT)).replace("\\", "/"),
-            str(SITEMAP_PATH.relative_to(ROOT)).replace("\\", "/"),
-        ],
+    draft_id = int(hashlib.sha256(article["slug"].encode("utf-8")).hexdigest()[:12], 16)
+    write_json(DRAFT_PAYLOAD_PATH, {
+        "id": draft_id,
+        "source": "assemblymaker",
+        "status": "draft",
+        "title": article["title"],
+        "excerpt": article["excerpt"],
+        "content_html": article["html"] + "\n" + faq_html(article["faq"]),
+        "article_html": rendered,
+        "article_path": str(article_path.relative_to(ROOT)).replace("\\", "/"),
+        "feed_item": feed_item,
+        "original_image_path": article["image_path"],
+        "featured_image": "",
+        "created_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     })
     return feed_item
+
+
+def restore_draft_payload(published: date, state: dict[str, Any]) -> dict[str, Any]:
+    """Rebuild the review payload when a same-day workflow run is retried."""
+    feed_item = next(
+        (
+            item
+            for item in load_feed()
+            if str(item.get("published") or "") == published.isoformat()
+        ),
+        None,
+    )
+    if not isinstance(feed_item, dict):
+        raise RuntimeError("Today's generated article is missing from blog/feed.json")
+    article_path = ROOT / str(feed_item["path"])
+    if not article_path.is_file():
+        raise RuntimeError(f"Today's generated article is missing: {article_path.relative_to(ROOT)}")
+    rendered = article_path.read_text(encoding="utf-8")
+    content_match = re.search(r"</figure>\s*(.*?)\s*</article>", rendered, flags=re.DOTALL)
+    if not content_match:
+        raise RuntimeError("Could not recover the article content for review")
+    matching_state = next(
+        (
+            item
+            for item in state.get("generated", [])
+            if isinstance(item, dict) and item.get("slug") == feed_item.get("slug")
+        ),
+        {},
+    )
+    payload = {
+        "id": int(hashlib.sha256(str(feed_item["slug"]).encode("utf-8")).hexdigest()[:12], 16),
+        "source": "assemblymaker",
+        "status": "draft",
+        "title": str(feed_item["title"]),
+        "excerpt": str(feed_item.get("excerpt") or ""),
+        "content_html": content_match.group(1).strip(),
+        "article_html": rendered,
+        "article_path": str(feed_item["path"]),
+        "feed_item": feed_item,
+        "original_image_path": str(feed_item.get("image_path") or ""),
+        "featured_image": "",
+        "created_at": str(matching_state.get("generated_at") or datetime.now(timezone.utc).isoformat(timespec="seconds")),
+    }
+    write_json(DRAFT_PAYLOAD_PATH, payload)
+    return payload
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -658,11 +734,13 @@ def main(argv: list[str] | None = None) -> int:
     images = read_json(IMAGES_PATH)
     state = read_json(STATE_PATH)
     published = date.fromisoformat(args.published_date) if args.published_date else date.today()
-    if not args.keyword.strip() and any(
+    allow_same_day = os.getenv("ALLOW_SAME_DAY", "").strip().lower() in {"1", "true", "yes"}
+    if not allow_same_day and not args.keyword.strip() and any(
         str(item.get("published") or "") == published.isoformat()
         for item in state.get("generated", [])
         if isinstance(item, dict)
     ):
+        restore_draft_payload(published, state)
         print(json.dumps({"status": "already-generated", "date": published.isoformat()}))
         return 0
     choice = choose_keyword(keyword_data, config, state, args.keyword)
