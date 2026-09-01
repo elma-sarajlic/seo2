@@ -1,5 +1,5 @@
 {
-  "last_cluster": "general_user_manuals_and_guides",
+  "last_cluster": "software_and_tools",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -16,6 +16,14 @@
       "slug": "digital-manuals-3d-assembly-guide",
       "published": "2026-09-01",
       "generated_at": "2026-09-01T19:38:38+00:00"
+    },
+    {
+      "keyword": "software user manual template",
+      "cluster": "software_and_tools",
+      "angle": "owner-specified topic",
+      "slug": "software-user-manual-template",
+      "published": "2026-09-01",
+      "generated_at": "2026-09-01T20:28:24+00:00"
     }
   ]
 }

@@ -1,5 +1,18 @@
 [
   {
+    "slug": "software-user-manual-template",
+    "path": "blog/software-user-manual-template.html",
+    "title": "Standardizing Technical Documentation with a Software User Manual Template",
+    "excerpt": "Discover how a structured software user manual template streamlines technical documentation, standardizes 3D assembly workflows, and improves technical clarity for hardware and software teams.",
+    "category": "Tools & workflow",
+    "published": "2026-09-01",
+    "display_date": "September 1, 2026",
+    "primary_keyword": "software user manual template",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "owner-specified topic",
+    "image_path": "examples/arm.png"
+  },
+  {
     "slug": "how-to-write-clear-assembly-instructions",
     "path": "blog/how-to-write-clear-assembly-instructions.html",
     "title": "How to Write Assembly Instructions People Can Actually Follow",
