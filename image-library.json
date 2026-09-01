@@ -1,0 +1,37 @@
+[
+  {
+    "path": "assets/how-it-works-workshop.png",
+    "alt": "Assembly Maker workflow for turning a 3D model into an interactive manual",
+    "clusters": ["software_and_tools", "general_user_manuals_and_guides"]
+  },
+  {
+    "path": "examples/drone.png",
+    "alt": "Drone assembly example displayed in Assembly Maker",
+    "clusters": ["assembly_and_product_instructions", "templates_and_examples"]
+  },
+  {
+    "path": "examples/arm.png",
+    "alt": "Robotic arm assembly example displayed in Assembly Maker",
+    "clusters": ["assembly_and_product_instructions", "software_and_tools"]
+  },
+  {
+    "path": "examples/agv.png",
+    "alt": "Automated guided vehicle assembly example displayed in Assembly Maker",
+    "clusters": ["assembly_and_product_instructions", "templates_and_examples"]
+  },
+  {
+    "path": "examples/sg90-servo.png",
+    "alt": "Finished SG90 micro servo assembly example",
+    "clusters": ["assembly_and_product_instructions", "templates_and_examples"]
+  },
+  {
+    "path": "examples/nema17-pulley.png",
+    "alt": "Finished NEMA 17 motor and pulley assembly example",
+    "clusters": ["assembly_and_product_instructions", "templates_and_examples"]
+  },
+  {
+    "path": "examples/mrp300.png",
+    "alt": "Detailed mechanical assembly example displayed in Assembly Maker",
+    "clusters": ["assembly_and_product_instructions", "general_user_manuals_and_guides"]
+  }
+]

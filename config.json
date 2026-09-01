@@ -1,0 +1,50 @@
+{
+  "site_name": "Assembly Maker",
+  "site_url": "https://assemblymaker.com",
+  "author_name": "Assembly Maker",
+  "language": "en",
+  "article_word_count": 1200,
+  "minimum_word_count": 750,
+  "content_angles": [
+    "practical guide",
+    "mistakes and troubleshooting",
+    "planning checklist",
+    "workflow comparison",
+    "template and worked example",
+    "quality review and maintenance"
+  ],
+  "cluster_order": [
+    "assembly_and_product_instructions",
+    "software_and_tools",
+    "templates_and_examples",
+    "general_user_manuals_and_guides"
+  ],
+  "excluded_keywords": [
+    "manual of me",
+    "bike installation",
+    "diy assembly"
+  ],
+  "allowed_internal_links": [
+    "/",
+    "/manual.html",
+    "/showcase.html",
+    "/tutorial.html",
+    "/blog.html",
+    "/viewer.html"
+  ],
+  "brand_facts": [
+    "Assembly Maker is free browser-based software for creating interactive 3D assembly instructions and digital product manuals.",
+    "It imports STEP, STP, GLB, and GLTF models.",
+    "Authors can record a sequence, set camera views and part visibility, write instructions, and add labels, notes, and arrows.",
+    "Authors can preview a manual, publish a browser-based viewer, and export PDF or WebM output.",
+    "An .amaker file is the portable editable project format.",
+    "The site contains working drone, robotic arm, automated guided vehicle, servo, motor, and mechanical assembly examples.",
+    "Do not claim pricing tiers, certifications, integrations, analytics, AI features, or file-format support beyond these facts."
+  ],
+  "category_labels": {
+    "assembly_and_product_instructions": "Assembly instructions",
+    "software_and_tools": "Tools & workflow",
+    "templates_and_examples": "Templates & examples",
+    "general_user_manuals_and_guides": "Digital manuals"
+  }
+}

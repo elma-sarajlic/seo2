@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+seo/*.tmp
+api/seo-review-config.php
+api/.seo-review-data/
+flutter_review_app_dual/.dart_tool/
+flutter_review_app_dual/build/
