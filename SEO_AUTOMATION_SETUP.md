@@ -55,18 +55,18 @@ Optional repository variables:
 
 ```text
 GEMINI_TEXT_MODEL=gemini-2.5-flash
-FTP_REMOTE_ROOT=/public_html
+FTP_REMOTE_ROOT=/assemblymaker.com
 FTP_PORT=21
 FTP_TLS=true
 ```
 
-If cPanel gives the dedicated FTP user a home directory that is already `public_html`, set `FTP_REMOTE_ROOT=/`. Use the exact document root shown by cPanel.
+For this hosting layout, use `FTP_REMOTE_ROOT=/assemblymaker.com` when the FTP account opens in the parent directory and `assemblymaker.com` is visible there. If a dedicated FTP account opens directly inside the `assemblymaker.com` directory, use `FTP_REMOTE_ROOT=/`. Do not use `/public_html`, because that belongs to the other website.
 
 Under **Settings → Actions → General → Workflow permissions**, allow read and write access so the bot can commit generated articles. A protected default branch must also allow GitHub Actions to push, or the history-commit step will need a separate automation branch.
 
 ## Upload to cPanel once
 
-For the initial switch, upload these updated public files and folders into the Assembly Maker document root:
+For the initial switch, upload these updated public files and folders into the `assemblymaker.com` document root:
 
 ```text
 blog.html

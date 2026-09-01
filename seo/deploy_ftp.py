@@ -45,7 +45,7 @@ def main() -> int:
     host = env("FTP_HOST")
     username = env("FTP_USERNAME")
     password = env("FTP_PASSWORD")
-    remote_root = os.getenv("FTP_REMOTE_ROOT", "/public_html").strip() or "/public_html"
+    remote_root = env("FTP_REMOTE_ROOT")
     port = int(os.getenv("FTP_PORT", "21"))
     use_tls = os.getenv("FTP_TLS", "true").strip().lower() in {"1", "true", "yes", "on"}
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
