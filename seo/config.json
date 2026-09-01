@@ -32,6 +32,18 @@
     "/blog.html",
     "/viewer.html"
   ],
+  "approved_external_sources": [
+    {
+      "name": "NIST STEP File Analyzer and Viewer",
+      "url": "https://www.nist.gov/services-resources/software/step-file-analyzer-and-viewer",
+      "use_for": "STEP files, CAD exchange, validation, and product manufacturing information"
+    },
+    {
+      "name": "Khronos Group glTF",
+      "url": "https://www.khronos.org/gltf/",
+      "use_for": "glTF, GLB, web-native 3D delivery, and 3D asset interoperability"
+    }
+  ],
   "brand_facts": [
     "Assembly Maker is free browser-based software for creating interactive 3D assembly instructions and digital product manuals.",
     "It imports STEP, STP, GLB, and GLTF models.",

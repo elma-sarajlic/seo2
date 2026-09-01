@@ -228,6 +228,10 @@ def build_prompt(choice: KeywordChoice, image: dict[str, Any], config: dict[str,
     category = config.get("category_labels", {}).get(choice.cluster, "Product documentation")
     facts = "\n".join(f"- {fact}" for fact in config.get("brand_facts", []))
     internal_links = "\n".join(f"- {link}" for link in config.get("allowed_internal_links", []))
+    external_sources = "\n".join(
+        f"- {source.get('name')}: {source.get('url')} — use for {source.get('use_for')}"
+        for source in config.get("approved_external_sources", [])
+    )
     custom_template = ""
     encoded_template = os.getenv("ARTICLE_PROMPT_TEMPLATE_B64", "").strip()
     if encoded_template:
@@ -270,6 +274,9 @@ Verified Assembly Maker facts:
 Allowed internal link targets:
 {internal_links}
 
+Approved authoritative external sources:
+{external_sources}
+
 Editorial requirements:
 - Answer the keyword's real search intent. Do not merely repeat the keyword.
 - Start with a 2-4 sentence direct answer in the lead field.
@@ -280,7 +287,8 @@ Editorial requirements:
 - Use h3 only when it improves the hierarchy. Do not include an h1 in html.
 - Add exactly one restrained callout using <div class="article-callout">.</div>.
 - Link naturally to 2-3 distinct allowed internal pages using root-relative URLs. Include one final, restrained CTA to /manual.html.
-- Do not add external links or cite studies unless a source was supplied here.
+- Include 1-2 relevant editorial outbound links to the approved authoritative external sources above. Link descriptive words naturally where the source supports the surrounding statement.
+- Do not invent, guess, or use any external URL that is not supplied in the approved source list.
 - Do not invent specifications, prices, customer results, integrations, certifications, or features.
 - The html field may use only p, h2, h3, ul, ol, li, strong, em, a, blockquote, div, table, thead, tbody, tr, th, td, and br.
 - Supply three concise FAQ items that are answered by the article.
@@ -317,9 +325,10 @@ def generate_with_gemini(choice: KeywordChoice, image: dict[str, Any], config: d
 
 
 class ArticleSanitizer(HTMLParser):
-    def __init__(self, allowed_internal_links: set[str]) -> None:
+    def __init__(self, allowed_internal_links: set[str], allowed_external_urls: set[str]) -> None:
         super().__init__(convert_charrefs=True)
         self.allowed_internal_links = allowed_internal_links
+        self.allowed_external_urls = allowed_external_urls
         self.parts: list[str] = []
         self.stack: list[str] = []
 
@@ -331,6 +340,8 @@ class ArticleSanitizer(HTMLParser):
                 href = parsed.path or "/"
                 if parsed.query:
                     href += "?" + parsed.query
+            elif parsed.scheme == "https" and href in self.allowed_external_urls:
+                return href
             else:
                 return ""
         if not href.startswith("/"):
@@ -379,8 +390,8 @@ class ArticleSanitizer(HTMLParser):
         return "".join(self.parts).strip()
 
 
-def sanitize_html(html: str, allowed_internal_links: set[str]) -> str:
-    sanitizer = ArticleSanitizer(allowed_internal_links)
+def sanitize_html(html: str, allowed_internal_links: set[str], allowed_external_urls: set[str]) -> str:
+    sanitizer = ArticleSanitizer(allowed_internal_links, allowed_external_urls)
     sanitizer.feed(html)
     sanitizer.close()
     return sanitizer.result()
@@ -409,6 +420,11 @@ def clean_article(
     cleaned["html"] = sanitize_html(
         str(article["html"]),
         set(config.get("allowed_internal_links", [])),
+        {
+            str(source.get("url") or "")
+            for source in config.get("approved_external_sources", [])
+            if str(source.get("url") or "").startswith("https://")
+        },
     )
     cleaned["faq"] = [
         {
@@ -547,12 +563,23 @@ def load_feed() -> list[dict[str, Any]]:
 
 
 def card_html(item: dict[str, Any]) -> str:
+    article_path = escape(item["path"], quote=True)
+    image_path = str(item.get("image_path") or "").strip()
+    image_html = ""
+    if image_path:
+        image_src = image_path if image_path.startswith(("http://", "https://", "/")) else "/" + image_path.lstrip("/")
+        image_html = (
+            f'<a class="blog-card-image" href="{article_path}" tabindex="-1" aria-hidden="true">'
+            f'<img src="{escape(image_src, quote=True)}" alt="" loading="lazy" width="1600" height="900">'
+            '</a>'
+        )
     return (
         '            <article class="card blog-card">'
+        f'{image_html}'
         f'<p class="blog-meta"><time datetime="{escape(item["published"])}">{escape(item["display_date"])}</time> · {escape(item["category"])}</p>'
-        f'<h2><a href="{escape(item["path"], quote=True)}">{escape(item["title"])}</a></h2>'
+        f'<h2><a href="{article_path}">{escape(item["title"])}</a></h2>'
         f'<p>{escape(item["excerpt"])}</p>'
-        f'<a class="text-link" href="{escape(item["path"], quote=True)}">Read more <span aria-hidden="true">→</span></a>'
+        f'<a class="text-link" href="{article_path}">Read more <span aria-hidden="true">→</span></a>'
         '</article>'
     )
 
