@@ -52,6 +52,19 @@ class SeoGeneratorTests(unittest.TestCase):
         SEO.require_markers(blog, SEO.BLOG_START, SEO.BLOG_END, ROOT / "blog.html")
         SEO.require_markers(sitemap, SEO.SITEMAP_START, SEO.SITEMAP_END, ROOT / "sitemap.xml")
 
+    def test_only_approved_authoritative_outbound_links_survive(self):
+        allowed = {
+            source["url"]
+            for source in self.config["approved_external_sources"]
+        }
+        html = (
+            '<p>Read the <a href="https://www.khronos.org/gltf/">official glTF overview</a> '
+            'and <a href="https://example.com/unsupported">an unsupported source</a>.</p>'
+        )
+        cleaned = SEO.sanitize_html(html, {"/manual.html"}, allowed)
+        self.assertIn('href="https://www.khronos.org/gltf/"', cleaned)
+        self.assertNotIn("example.com", cleaned)
+
 
 if __name__ == "__main__":
     unittest.main()
