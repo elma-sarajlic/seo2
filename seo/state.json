@@ -32,6 +32,14 @@
       "slug": "free-software-user-manual-3d-assembly-guide",
       "published": "2026-09-01",
       "generated_at": "2026-09-01T20:59:17+00:00"
+    },
+    {
+      "keyword": "online instructions",
+      "cluster": "manual_topic",
+      "angle": "owner-specified topic",
+      "slug": "online-instructions-guide",
+      "published": "2026-09-01",
+      "generated_at": "2026-09-01T21:41:05+00:00"
     }
   ]
 }

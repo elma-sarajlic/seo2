@@ -13,6 +13,19 @@
     "image_path": "examples/arm.png"
   },
   {
+    "slug": "online-instructions-guide",
+    "path": "blog/online-instructions-guide.html",
+    "title": "How to Build Interactive 3D Online Instructions for Hardware Products",
+    "excerpt": "Discover how to convert complex 3D CAD assemblies into clear online instructions. Set assembly sequences, annotate components, and share interactive web or PDF product documentation.",
+    "category": "Product documentation",
+    "published": "2026-09-01",
+    "display_date": "September 1, 2026",
+    "primary_keyword": "online instructions",
+    "keyword_cluster": "manual_topic",
+    "content_angle": "owner-specified topic",
+    "image_path": "examples/agv.png"
+  },
+  {
     "slug": "how-to-write-clear-assembly-instructions",
     "path": "blog/how-to-write-clear-assembly-instructions.html",
     "title": "How to Write Assembly Instructions People Can Actually Follow",
