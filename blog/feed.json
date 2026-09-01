@@ -26,6 +26,19 @@
     "image_path": "examples/agv.png"
   },
   {
+    "slug": "free-software-user-manual-3d-assembly-guide",
+    "path": "blog/free-software-user-manual-3d-assembly-guide.html",
+    "title": "Free Software User Manual Guide: Create Interactive 3D Assembly Instructions",
+    "excerpt": "Learn how to create interactive 3D assembly guides and product documentation using free browser-based user manual software. Convert CAD files into step-by-step digital instructions.",
+    "category": "Product documentation",
+    "published": "2026-09-01",
+    "display_date": "September 1, 2026",
+    "primary_keyword": "free software user manual",
+    "keyword_cluster": "manual_topic",
+    "content_angle": "owner-specified topic",
+    "image_path": "examples/agv.png"
+  },
+  {
     "slug": "digital-manuals-3d-assembly-guide",
     "path": "blog/digital-manuals-3d-assembly-guide.html",
     "title": "Creating Interactive Digital Manuals from 3D CAD: A Practical Guide",
