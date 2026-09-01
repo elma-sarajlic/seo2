@@ -8,7 +8,7 @@ on:
         required: false
         type: string
   schedule:
-    - cron: "20 5 * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -41,7 +41,15 @@ jobs:
           cache: pip
           cache-dependency-path: seo/requirements.txt
 
+      - name: Check Assembly Maker schedule and topic queue
+        id: gate
+        env:
+          WORKFLOW_EVENT: ${{ github.event_name }}
+          WORKFLOW_KEYWORD: ${{ inputs.keyword }}
+        run: python seo/check_schedule.py
+
       - name: Validate secrets
+        if: steps.gate.outputs.should_generate == 'true'
         run: |
           python - <<'PY'
           import os
@@ -53,20 +61,27 @@ jobs:
           PY
 
       - name: Install generator
+        if: steps.gate.outputs.should_generate == 'true'
         run: python -m pip install -r seo/requirements.txt
 
       - name: Generate today's article
+        if: steps.gate.outputs.should_generate == 'true'
         env:
-          ARTICLE_KEYWORD: ${{ inputs.keyword }}
+          ARTICLE_KEYWORD: ${{ steps.gate.outputs.keyword }}
+          ALLOW_SAME_DAY: "true"
+          ARTICLE_PROMPT_TEMPLATE_B64: ${{ steps.gate.outputs.article_prompt_b64 }}
+          CONTENT_CATEGORIES_B64: ${{ steps.gate.outputs.categories_b64 }}
         run: python seo/generate_article.py
 
       - name: Validate generated website files
+        if: steps.gate.outputs.should_generate == 'true'
         run: |
-          python -m py_compile seo/generate_article.py seo/submit_draft.py
+          python -m py_compile seo/check_schedule.py seo/generate_article.py seo/submit_draft.py
           python -m unittest tests.test_seo_generator
           git diff --check
 
       - name: Save article history in GitHub
+        if: steps.gate.outputs.should_generate == 'true'
         run: |
           git config user.name "assemblymaker-seo-bot"
           git config user.email "seo-bot@assemblymaker.com"
@@ -79,4 +94,8 @@ jobs:
           fi
 
       - name: Submit article for image and approval
+        if: steps.gate.outputs.should_generate == 'true'
+        env:
+          ARTICLE_KEYWORD: ${{ steps.gate.outputs.keyword }}
+          QUEUED_TOPIC_ID: ${{ steps.gate.outputs.topic_id }}
         run: python seo/submit_draft.py
