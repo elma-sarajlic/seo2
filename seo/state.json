@@ -1,5 +1,5 @@
 {
-  "last_cluster": "manual_topic",
+  "last_cluster": "software_and_tools",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -40,6 +40,14 @@
       "slug": "online-instructions-guide",
       "published": "2026-09-01",
       "generated_at": "2026-09-01T21:41:05+00:00"
+    },
+    {
+      "keyword": "user manual software",
+      "cluster": "software_and_tools",
+      "angle": "owner-specified topic",
+      "slug": "user-manual-software-3d-documentation-guide",
+      "published": "2026-09-02",
+      "generated_at": "2026-09-02T12:18:18+00:00"
     }
   ]
 }

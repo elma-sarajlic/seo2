@@ -1,5 +1,18 @@
 [
   {
+    "slug": "user-manual-software-3d-documentation-guide",
+    "path": "blog/user-manual-software-3d-documentation-guide.html",
+    "title": "Choosing User Manual Software: Modern 3D Documentation Workflows",
+    "excerpt": "Learn how modern user manual software converts STEP, STP, GLB, and GLTF 3D models into interactive, step-by-step technical guides and web-ready product documentation.",
+    "category": "Tools & workflow",
+    "published": "2026-09-02",
+    "display_date": "September 2, 2026",
+    "primary_keyword": "user manual software",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "owner-specified topic",
+    "image_path": "examples/arm.png"
+  },
+  {
     "slug": "software-user-manual-template",
     "path": "blog/software-user-manual-template.html",
     "title": "Standardizing Technical Documentation with a Software User Manual Template",
