@@ -1,5 +1,18 @@
 [
   {
+    "slug": "step-by-step-instructions-examples",
+    "path": "blog/step-by-step-instructions-examples.html",
+    "title": "Step by Step Instructions Examples: Practical 3D Assembly Manuals",
+    "excerpt": "Discover effective step by step instructions examples for complex mechanical assemblies, hardware products, and technical equipment using interactive 3D manual tools.",
+    "category": "Templates & examples",
+    "published": "2026-09-03",
+    "display_date": "September 3, 2026",
+    "primary_keyword": "step by step instructions examples",
+    "keyword_cluster": "templates_and_examples",
+    "content_angle": "practical guide",
+    "image_path": "examples/agv.png"
+  },
+  {
     "slug": "user-manual-software-3d-documentation-guide",
     "path": "blog/user-manual-software-3d-documentation-guide.html",
     "title": "Choosing User Manual Software: Modern 3D Documentation Workflows",
