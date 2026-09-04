@@ -1,5 +1,18 @@
 [
   {
+    "slug": "complete-user-manual-guide-3d-assembly",
+    "path": "blog/complete-user-manual-guide-3d-assembly.html",
+    "title": "Complete User Manual Guide: How to Build Interactive 3D Product Documentation",
+    "excerpt": "Discover how to transform CAD models into interactive 3D assembly instructions, WebM video exports, and portable documentation in this complete user manual guide.",
+    "category": "Digital manuals",
+    "published": "2026-09-04",
+    "display_date": "September 4, 2026",
+    "primary_keyword": "user manual guide",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "practical guide",
+    "image_path": "examples/mrp300.png"
+  },
+  {
     "slug": "step-by-step-instructions-examples",
     "path": "blog/step-by-step-instructions-examples.html",
     "title": "Step by Step Instructions Examples: Practical 3D Assembly Manuals",
