@@ -1,5 +1,5 @@
 {
-  "last_cluster": "general_user_manuals_and_guides",
+  "last_cluster": "assembly_and_product_instructions",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -64,6 +64,14 @@
       "slug": "complete-user-manual-guide-3d-assembly",
       "published": "2026-09-04",
       "generated_at": "2026-09-04T12:17:42+00:00"
+    },
+    {
+      "keyword": "installation manual",
+      "cluster": "assembly_and_product_instructions",
+      "angle": "practical guide",
+      "slug": "how-to-build-interactive-3d-installation-manual",
+      "published": "2026-09-05",
+      "generated_at": "2026-09-05T09:22:57+00:00"
     }
   ]
 }

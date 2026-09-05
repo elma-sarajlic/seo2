@@ -1,5 +1,18 @@
 [
   {
+    "slug": "how-to-build-interactive-3d-installation-manual",
+    "path": "blog/how-to-build-interactive-3d-installation-manual.html",
+    "title": "How to Build an Interactive 3D Installation Manual: Practical Guide",
+    "excerpt": "A practical guide to building clear, interactive 3D installation manuals from STEP and glTF CAD files, featuring workflow steps, review checklists, and visual guidelines.",
+    "category": "Assembly instructions",
+    "published": "2026-09-05",
+    "display_date": "September 5, 2026",
+    "primary_keyword": "installation manual",
+    "keyword_cluster": "assembly_and_product_instructions",
+    "content_angle": "practical guide",
+    "image_path": "examples/drone.png"
+  },
+  {
     "slug": "complete-user-manual-guide-3d-assembly",
     "path": "blog/complete-user-manual-guide-3d-assembly.html",
     "title": "Complete User Manual Guide: How to Build Interactive 3D Product Documentation",

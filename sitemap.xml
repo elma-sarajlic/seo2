@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://assemblymaker.com/blog.html</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -43,6 +43,12 @@
     <priority>0.4</priority>
   </url>
 <!-- SEO-URLS:START -->
+  <url>
+    <loc>https://assemblymaker.com/blog/how-to-build-interactive-3d-installation-manual.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://assemblymaker.com/blog/complete-user-manual-guide-3d-assembly.html</loc>
     <lastmod>2026-09-04</lastmod>
