@@ -1,5 +1,18 @@
 [
   {
+    "slug": "software-user-guide-template",
+    "path": "blog/software-user-guide-template.html",
+    "title": "How to Build a Software User Guide Template for Interactive 3D Manuals",
+    "excerpt": "A practical guide to structuring a software user guide template for hardware and technical documentation, from initial 3D model import to interactive publishing.",
+    "category": "Tools & workflow",
+    "published": "2026-09-06",
+    "display_date": "September 6, 2026",
+    "primary_keyword": "software user guide template",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "practical guide",
+    "image_path": "assets/how-it-works-workshop.png"
+  },
+  {
     "slug": "how-to-build-interactive-3d-installation-manual",
     "path": "blog/how-to-build-interactive-3d-installation-manual.html",
     "title": "How to Build an Interactive 3D Installation Manual: Practical Guide",
