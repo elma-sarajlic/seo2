@@ -1,5 +1,18 @@
 [
   {
+    "slug": "app-user-manual-template-guide",
+    "path": "blog/app-user-manual-template-guide.html",
+    "title": "Building Interactive 3D Product Guides with an App User Manual Template",
+    "excerpt": "Discover how an app user manual template streamlines 3D documentation for hardware teams and SaaS creators. Build interactive 3D instructions with step-by-step clarity.",
+    "category": "Templates & examples",
+    "published": "2026-09-07",
+    "display_date": "September 7, 2026",
+    "primary_keyword": "app user manual template",
+    "keyword_cluster": "templates_and_examples",
+    "content_angle": "practical guide",
+    "image_path": "examples/drone.png"
+  },
+  {
     "slug": "software-user-guide-template",
     "path": "blog/software-user-guide-template.html",
     "title": "How to Build a Software User Guide Template for Interactive 3D Manuals",
