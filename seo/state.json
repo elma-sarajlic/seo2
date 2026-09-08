@@ -1,5 +1,5 @@
 {
-  "last_cluster": "templates_and_examples",
+  "last_cluster": "general_user_manuals_and_guides",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -88,6 +88,14 @@
       "slug": "app-user-manual-template-guide",
       "published": "2026-09-07",
       "generated_at": "2026-09-07T16:06:50+00:00"
+    },
+    {
+      "keyword": "user manual pdf",
+      "cluster": "general_user_manuals_and_guides",
+      "angle": "practical guide",
+      "slug": "how-to-create-user-manual-pdf-from-3d-cad",
+      "published": "2026-09-08",
+      "generated_at": "2026-09-08T20:42:07+00:00"
     }
   ]
 }

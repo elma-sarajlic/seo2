@@ -1,5 +1,18 @@
 [
   {
+    "slug": "how-to-create-user-manual-pdf-from-3d-cad",
+    "path": "blog/how-to-create-user-manual-pdf-from-3d-cad.html",
+    "title": "How to Create a Clear User Manual PDF from 3D CAD Data",
+    "excerpt": "Learn how hardware creators and documentation teams transform 3D CAD models into clear user manual PDF documents and interactive digital guides using Assembly Maker.",
+    "category": "Digital manuals",
+    "published": "2026-09-08",
+    "display_date": "September 8, 2026",
+    "primary_keyword": "user manual pdf",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "practical guide",
+    "image_path": "examples/mrp300.png"
+  },
+  {
     "slug": "app-user-manual-template-guide",
     "path": "blog/app-user-manual-template-guide.html",
     "title": "Building Interactive 3D Product Guides with an App User Manual Template",
