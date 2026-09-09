@@ -1,5 +1,5 @@
 {
-  "last_cluster": "general_user_manuals_and_guides",
+  "last_cluster": "assembly_and_product_instructions",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -96,6 +96,14 @@
       "slug": "how-to-create-user-manual-pdf-from-3d-cad",
       "published": "2026-09-08",
       "generated_at": "2026-09-08T20:42:07+00:00"
+    },
+    {
+      "keyword": "installation instructions",
+      "cluster": "assembly_and_product_instructions",
+      "angle": "practical guide",
+      "slug": "how-to-create-3d-installation-instructions",
+      "published": "2026-09-09",
+      "generated_at": "2026-09-09T05:59:03+00:00"
     }
   ]
 }

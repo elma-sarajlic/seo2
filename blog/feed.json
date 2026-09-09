@@ -1,5 +1,18 @@
 [
   {
+    "slug": "how-to-create-3d-installation-instructions",
+    "path": "blog/how-to-create-3d-installation-instructions.html",
+    "title": "How to Create Clear 3D Installation Instructions for Complex Assemblies",
+    "excerpt": "Discover how interactive 3D installation instructions clarify complex assembly steps, reduce field errors, and streamline technical documentation workflows using standard CAD assets.",
+    "category": "Assembly instructions",
+    "published": "2026-09-09",
+    "display_date": "September 9, 2026",
+    "primary_keyword": "installation instructions",
+    "keyword_cluster": "assembly_and_product_instructions",
+    "content_angle": "practical guide",
+    "image_path": "examples/sg90-servo.png"
+  },
+  {
     "slug": "how-to-create-user-manual-pdf-from-3d-cad",
     "path": "blog/how-to-create-user-manual-pdf-from-3d-cad.html",
     "title": "How to Create a Clear User Manual PDF from 3D CAD Data",
