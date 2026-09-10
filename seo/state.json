@@ -1,5 +1,5 @@
 {
-  "last_cluster": "assembly_and_product_instructions",
+  "last_cluster": "software_and_tools",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -104,6 +104,14 @@
       "slug": "how-to-create-3d-installation-instructions",
       "published": "2026-09-09",
       "generated_at": "2026-09-09T05:59:03+00:00"
+    },
+    {
+      "keyword": "software manual template",
+      "cluster": "software_and_tools",
+      "angle": "practical guide",
+      "slug": "software-manual-template-guide",
+      "published": "2026-09-10",
+      "generated_at": "2026-09-10T11:39:14+00:00"
     }
   ]
 }

@@ -1,5 +1,18 @@
 [
   {
+    "slug": "software-manual-template-guide",
+    "path": "blog/software-manual-template-guide.html",
+    "title": "Building an Effective Software Manual Template for Hardware Products",
+    "excerpt": "Learn how to build a software manual template for 3D assembly instructions, standardizing step sequences, camera views, annotations, and interactive exports.",
+    "category": "Tools & workflow",
+    "published": "2026-09-10",
+    "display_date": "September 10, 2026",
+    "primary_keyword": "software manual template",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "practical guide",
+    "image_path": "examples/arm.png"
+  },
+  {
     "slug": "how-to-create-3d-installation-instructions",
     "path": "blog/how-to-create-3d-installation-instructions.html",
     "title": "How to Create Clear 3D Installation Instructions for Complex Assemblies",
