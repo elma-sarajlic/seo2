@@ -1,5 +1,18 @@
 [
   {
+    "slug": "application-user-manual-template",
+    "path": "blog/application-user-manual-template.html",
+    "title": "Building Interactive Application User Manual Templates from 3D CAD Data",
+    "excerpt": "A practical guide to structuring an application user manual template using interactive 3D models, STEP/GLTF files, callouts, and multi-format exports.",
+    "category": "Templates & examples",
+    "published": "2026-09-11",
+    "display_date": "September 11, 2026",
+    "primary_keyword": "application user manual template",
+    "keyword_cluster": "templates_and_examples",
+    "content_angle": "practical guide",
+    "image_path": "examples/sg90-servo.png"
+  },
+  {
     "slug": "software-manual-template-guide",
     "path": "blog/software-manual-template-guide.html",
     "title": "Building an Effective Software Manual Template for Hardware Products",
