@@ -1,5 +1,18 @@
 [
   {
+    "slug": "building-a-modern-user-manual",
+    "path": "blog/building-a-modern-user-manual.html",
+    "title": "Building a Modern User Manual: Interactive 3D and Digital Documentation Guide",
+    "excerpt": "Discover how to build an engaging, accurate digital user manual using 3D models, step sequences, and browser-based publishing tools for hardware products.",
+    "category": "Digital manuals",
+    "published": "2026-09-12",
+    "display_date": "September 12, 2026",
+    "primary_keyword": "user manual",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "practical guide",
+    "image_path": "examples/mrp300.png"
+  },
+  {
     "slug": "application-user-manual-template",
     "path": "blog/application-user-manual-template.html",
     "title": "Building Interactive Application User Manual Templates from 3D CAD Data",

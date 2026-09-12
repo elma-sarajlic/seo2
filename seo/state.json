@@ -1,5 +1,5 @@
 {
-  "last_cluster": "templates_and_examples",
+  "last_cluster": "general_user_manuals_and_guides",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -120,6 +120,14 @@
       "slug": "application-user-manual-template",
       "published": "2026-09-11",
       "generated_at": "2026-09-11T18:11:07+00:00"
+    },
+    {
+      "keyword": "user manual",
+      "cluster": "general_user_manuals_and_guides",
+      "angle": "practical guide",
+      "slug": "building-a-modern-user-manual",
+      "published": "2026-09-12",
+      "generated_at": "2026-09-12T05:46:56+00:00"
     }
   ]
 }
