@@ -1,5 +1,18 @@
 [
   {
+    "slug": "how-to-build-3d-installation-guides",
+    "path": "blog/how-to-build-3d-installation-guides.html",
+    "title": "How to Build Interactive 3D Installation Guides for Complex Hardware",
+    "excerpt": "Clear installation guides reduce assembly errors and technician downtime. Learn how to transform 3D CAD files into interactive, step-by-step visual documentation.",
+    "category": "Assembly instructions",
+    "published": "2026-09-13",
+    "display_date": "September 13, 2026",
+    "primary_keyword": "installation guides",
+    "keyword_cluster": "assembly_and_product_instructions",
+    "content_angle": "practical guide",
+    "image_path": "examples/mrp300.png"
+  },
+  {
     "slug": "building-a-modern-user-manual",
     "path": "blog/building-a-modern-user-manual.html",
     "title": "Building a Modern User Manual: Interactive 3D and Digital Documentation Guide",
