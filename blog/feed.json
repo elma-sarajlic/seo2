@@ -1,5 +1,18 @@
 [
   {
+    "slug": "user-guide-software-interactive-3d-manuals",
+    "path": "blog/user-guide-software-interactive-3d-manuals.html",
+    "title": "How to Use 3D User Guide Software to Create Interactive Product Manuals",
+    "excerpt": "Discover how browser-based user guide software transforms complex CAD files into interactive 3D assembly instructions, WebM video clips, and printable documentation.",
+    "category": "Tools & workflow",
+    "published": "2026-09-14",
+    "display_date": "September 14, 2026",
+    "primary_keyword": "user guide software",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "practical guide",
+    "image_path": "assets/how-it-works-workshop.png"
+  },
+  {
     "slug": "how-to-build-3d-installation-guides",
     "path": "blog/how-to-build-3d-installation-guides.html",
     "title": "How to Build Interactive 3D Installation Guides for Complex Hardware",
