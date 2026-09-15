@@ -1,5 +1,18 @@
 [
   {
+    "slug": "application-user-guide-template",
+    "path": "blog/application-user-guide-template.html",
+    "title": "Structuring an Application User Guide Template for Complex Assemblies",
+    "excerpt": "A practical guide to structuring application user guide templates for physical assemblies and hardware-software products using interactive 3D tools and standard formats.",
+    "category": "Templates & examples",
+    "published": "2026-09-15",
+    "display_date": "September 15, 2026",
+    "primary_keyword": "application user guide template",
+    "keyword_cluster": "templates_and_examples",
+    "content_angle": "practical guide",
+    "image_path": "examples/sg90-servo.png"
+  },
+  {
     "slug": "user-guide-software-interactive-3d-manuals",
     "path": "blog/user-guide-software-interactive-3d-manuals.html",
     "title": "How to Use 3D User Guide Software to Create Interactive Product Manuals",
