@@ -1,5 +1,18 @@
 [
   {
+    "slug": "create-clear-instruction-manual",
+    "path": "blog/create-clear-instruction-manual.html",
+    "title": "How to Build a Clear Interactive Instruction Manual",
+    "excerpt": "A practical guide for engineering and manufacturing teams to transform 3D CAD models into clear, step-by-step interactive instruction manuals.",
+    "category": "Digital manuals",
+    "published": "2026-09-16",
+    "display_date": "September 16, 2026",
+    "primary_keyword": "instruction manual",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "practical guide",
+    "image_path": "assets/how-it-works-workshop.png"
+  },
+  {
     "slug": "application-user-guide-template",
     "path": "blog/application-user-guide-template.html",
     "title": "Structuring an Application User Guide Template for Complex Assemblies",
