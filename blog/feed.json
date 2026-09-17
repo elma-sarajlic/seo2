@@ -1,5 +1,18 @@
 [
   {
+    "slug": "how-to-create-clear-manufacturing-instructions",
+    "path": "blog/how-to-create-clear-manufacturing-instructions.html",
+    "title": "How to Create Clear Manufacturing Instructions with 3D Models",
+    "excerpt": "Discover a practical guide to authoring precise manufacturing instructions. Learn how to turn CAD models into clear 3D digital manuals that reduce assembly errors.",
+    "category": "Assembly instructions",
+    "published": "2026-09-17",
+    "display_date": "September 17, 2026",
+    "primary_keyword": "manufacturing instructions",
+    "keyword_cluster": "assembly_and_product_instructions",
+    "content_angle": "practical guide",
+    "image_path": "examples/agv.png"
+  },
+  {
     "slug": "create-clear-instruction-manual",
     "path": "blog/create-clear-instruction-manual.html",
     "title": "How to Build a Clear Interactive Instruction Manual",
