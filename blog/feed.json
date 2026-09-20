@@ -1,5 +1,18 @@
 [
   {
+    "slug": "step-by-step-guide-generator-3d-assembly-manuals",
+    "path": "blog/step-by-step-guide-generator-3d-assembly-manuals.html",
+    "title": "How to Use a Step by Step Guide Generator for 3D Technical Manuals",
+    "excerpt": "Discover how a dedicated step by step guide generator transforms STEP and GLB files into interactive, camera-controlled 3D assembly manuals and digital product guides.",
+    "category": "Tools & workflow",
+    "published": "2026-09-20",
+    "display_date": "September 20, 2026",
+    "primary_keyword": "step by step guide generator",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "practical guide",
+    "image_path": "assets/how-it-works-workshop.png"
+  },
+  {
     "slug": "how-to-create-clear-manufacturing-instructions",
     "path": "blog/how-to-create-clear-manufacturing-instructions.html",
     "title": "How to Create Clear Manufacturing Instructions with 3D Models",

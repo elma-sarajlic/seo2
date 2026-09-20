@@ -1,5 +1,5 @@
 {
-  "last_cluster": "assembly_and_product_instructions",
+  "last_cluster": "software_and_tools",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -168,6 +168,14 @@
       "slug": "how-to-create-clear-manufacturing-instructions",
       "published": "2026-09-17",
       "generated_at": "2026-09-17T22:09:31+00:00"
+    },
+    {
+      "keyword": "step by step guide generator",
+      "cluster": "software_and_tools",
+      "angle": "practical guide",
+      "slug": "step-by-step-guide-generator-3d-assembly-manuals",
+      "published": "2026-09-20",
+      "generated_at": "2026-09-20T11:49:43+00:00"
     }
   ]
 }
