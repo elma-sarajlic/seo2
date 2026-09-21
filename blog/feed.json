@@ -1,5 +1,18 @@
 [
   {
+    "slug": "app-user-guide-template",
+    "path": "blog/app-user-guide-template.html",
+    "title": "App User Guide Template: How to Build Interactive 3D Digital Manuals",
+    "excerpt": "Standardize product documentation using an app user guide template designed for interactive 3D models, step-by-step sequences, and digital publishing.",
+    "category": "Templates & examples",
+    "published": "2026-09-21",
+    "display_date": "September 21, 2026",
+    "primary_keyword": "app user guide template",
+    "keyword_cluster": "templates_and_examples",
+    "content_angle": "practical guide",
+    "image_path": "examples/agv.png"
+  },
+  {
     "slug": "step-by-step-guide-generator-3d-assembly-manuals",
     "path": "blog/step-by-step-guide-generator-3d-assembly-manuals.html",
     "title": "How to Use a Step by Step Guide Generator for 3D Technical Manuals",

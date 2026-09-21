@@ -1,5 +1,5 @@
 {
-  "last_cluster": "software_and_tools",
+  "last_cluster": "templates_and_examples",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -176,6 +176,14 @@
       "slug": "step-by-step-guide-generator-3d-assembly-manuals",
       "published": "2026-09-20",
       "generated_at": "2026-09-20T11:49:43+00:00"
+    },
+    {
+      "keyword": "app user guide template",
+      "cluster": "templates_and_examples",
+      "angle": "practical guide",
+      "slug": "app-user-guide-template",
+      "published": "2026-09-21",
+      "generated_at": "2026-09-21T05:53:23+00:00"
     }
   ]
 }
