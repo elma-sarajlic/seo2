@@ -1,5 +1,18 @@
 [
   {
+    "slug": "creating-clear-manuals-pdf-interactive-3d-documentation",
+    "path": "blog/creating-clear-manuals-pdf-interactive-3d-documentation.html",
+    "title": "Creating Clear Manuals PDF and Interactive 3D Documentation from CAD Files",
+    "excerpt": "Static PDF documentation often falls short for complex hardware. Discover how to turn STEP, STP, GLB, and GLTF files into clear manuals PDF exports and interactive web guides.",
+    "category": "Digital manuals",
+    "published": "2026-09-22",
+    "display_date": "September 22, 2026",
+    "primary_keyword": "manuals pdf",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "practical guide",
+    "image_path": "examples/mrp300.png"
+  },
+  {
     "slug": "app-user-guide-template",
     "path": "blog/app-user-guide-template.html",
     "title": "App User Guide Template: How to Build Interactive 3D Digital Manuals",
