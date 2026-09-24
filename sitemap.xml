@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://assemblymaker.com/blog.html</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -43,6 +43,12 @@
     <priority>0.4</priority>
   </url>
 <!-- SEO-URLS:START -->
+  <url>
+    <loc>https://assemblymaker.com/blog/creating-clear-product-instructions-3d-cad.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://assemblymaker.com/blog/creating-clear-manuals-pdf-interactive-3d-documentation.html</loc>
     <lastmod>2026-09-22</lastmod>

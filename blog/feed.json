@@ -1,5 +1,18 @@
 [
   {
+    "slug": "creating-clear-product-instructions-3d-cad",
+    "path": "blog/creating-clear-product-instructions-3d-cad.html",
+    "title": "Creating Clear Product Instructions with 3D CAD: A Practical Guide",
+    "excerpt": "A practical guide for hardware creators and documentation teams on creating clear, interactive 3D product instructions using CAD data and browser-based authoring.",
+    "category": "Assembly instructions",
+    "published": "2026-09-24",
+    "display_date": "September 24, 2026",
+    "primary_keyword": "product instructions",
+    "keyword_cluster": "assembly_and_product_instructions",
+    "content_angle": "practical guide",
+    "image_path": "examples/arm.png"
+  },
+  {
     "slug": "creating-clear-manuals-pdf-interactive-3d-documentation",
     "path": "blog/creating-clear-manuals-pdf-interactive-3d-documentation.html",
     "title": "Creating Clear Manuals PDF and Interactive 3D Documentation from CAD Files",
