@@ -1,5 +1,18 @@
 [
   {
+    "slug": "user-manual-for-software-application",
+    "path": "blog/user-manual-for-software-application.html",
+    "title": "How to Create a Clear User Manual for Software Applications and Complex Hardware",
+    "excerpt": "Build clear, interactive documentation for technical software and hardware products using modern sequence recording, STEP/glTF files, and web-native manuals.",
+    "category": "Tools & workflow",
+    "published": "2026-09-26",
+    "display_date": "September 26, 2026",
+    "primary_keyword": "user manual for software application",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "practical guide",
+    "image_path": "examples/arm.png"
+  },
+  {
     "slug": "creating-clear-product-instructions-3d-cad",
     "path": "blog/creating-clear-product-instructions-3d-cad.html",
     "title": "Creating Clear Product Instructions with 3D CAD: A Practical Guide",

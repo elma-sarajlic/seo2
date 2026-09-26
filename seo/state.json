@@ -1,5 +1,5 @@
 {
-  "last_cluster": "assembly_and_product_instructions",
+  "last_cluster": "software_and_tools",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -200,6 +200,14 @@
       "slug": "creating-clear-product-instructions-3d-cad",
       "published": "2026-09-24",
       "generated_at": "2026-09-24T21:49:43+00:00"
+    },
+    {
+      "keyword": "user manual for software application",
+      "cluster": "software_and_tools",
+      "angle": "practical guide",
+      "slug": "user-manual-for-software-application",
+      "published": "2026-09-26",
+      "generated_at": "2026-09-26T23:44:17+00:00"
     }
   ]
 }
