@@ -1,5 +1,18 @@
 [
   {
+    "slug": "user-guide-manual-template",
+    "path": "blog/user-guide-manual-template.html",
+    "title": "How to Build a User Guide Manual Template for 3D Product Documentation",
+    "excerpt": "Learn how to build a scalable user guide manual template for hardware, robotics, and mechanical products using structured steps, clean 3D assets, and interactive browser output.",
+    "category": "Templates & examples",
+    "published": "2026-09-27",
+    "display_date": "September 27, 2026",
+    "primary_keyword": "user guide manual template",
+    "keyword_cluster": "templates_and_examples",
+    "content_angle": "practical guide",
+    "image_path": "examples/agv.png"
+  },
+  {
     "slug": "user-manual-for-software-application",
     "path": "blog/user-manual-for-software-application.html",
     "title": "How to Create a Clear User Manual for Software Applications and Complex Hardware",
