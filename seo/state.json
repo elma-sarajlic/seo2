@@ -1,5 +1,5 @@
 {
-  "last_cluster": "templates_and_examples",
+  "last_cluster": "general_user_manuals_and_guides",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -216,6 +216,14 @@
       "slug": "user-guide-manual-template",
       "published": "2026-09-27",
       "generated_at": "2026-09-27T07:34:13+00:00"
+    },
+    {
+      "keyword": "user guides",
+      "cluster": "general_user_manuals_and_guides",
+      "angle": "practical guide",
+      "slug": "how-to-create-interactive-3d-user-guides",
+      "published": "2026-09-30",
+      "generated_at": "2026-09-30T08:52:34+00:00"
     }
   ]
 }

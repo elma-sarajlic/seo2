@@ -1,5 +1,18 @@
 [
   {
+    "slug": "how-to-create-interactive-3d-user-guides",
+    "path": "blog/how-to-create-interactive-3d-user-guides.html",
+    "title": "How to Create Interactive 3D User Guides for Hardware and Mechanical Assemblies",
+    "excerpt": "A comprehensive practical guide to authoring interactive 3D user guides. Convert complex CAD models into step-by-step digital manuals with visual clarity.",
+    "category": "Digital manuals",
+    "published": "2026-09-30",
+    "display_date": "September 30, 2026",
+    "primary_keyword": "user guides",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "practical guide",
+    "image_path": "assets/how-it-works-workshop.png"
+  },
+  {
     "slug": "user-guide-manual-template",
     "path": "blog/user-guide-manual-template.html",
     "title": "How to Build a User Guide Manual Template for 3D Product Documentation",
