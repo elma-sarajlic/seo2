@@ -1,5 +1,18 @@
 [
   {
+    "slug": "create-3d-assembly-tutorial-guide",
+    "path": "blog/create-3d-assembly-tutorial-guide.html",
+    "title": "How to Create a Clear 3D Assembly Tutorial: Step-by-Step Guide",
+    "excerpt": "Master the process of transforming CAD files into interactive 3D assembly tutorials with structured steps, camera angles, annotations, and multi-format exports.",
+    "category": "Assembly instructions",
+    "published": "2026-10-03",
+    "display_date": "October 3, 2026",
+    "primary_keyword": "assembly tutorial",
+    "keyword_cluster": "assembly_and_product_instructions",
+    "content_angle": "practical guide",
+    "image_path": "examples/mrp300.png"
+  },
+  {
     "slug": "how-to-create-interactive-3d-user-guides",
     "path": "blog/how-to-create-interactive-3d-user-guides.html",
     "title": "How to Create Interactive 3D User Guides for Hardware and Mechanical Assemblies",
