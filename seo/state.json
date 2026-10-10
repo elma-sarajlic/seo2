@@ -1,5 +1,5 @@
 {
-  "last_cluster": "software_and_tools",
+  "last_cluster": "templates_and_examples",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -240,6 +240,14 @@
       "slug": "software-instruction-manual-template-guide",
       "published": "2026-10-06",
       "generated_at": "2026-10-06T20:20:11+00:00"
+    },
+    {
+      "keyword": "user guide examples",
+      "cluster": "templates_and_examples",
+      "angle": "practical guide",
+      "slug": "user-guide-examples-interactive-3d-assemblies",
+      "published": "2026-10-10",
+      "generated_at": "2026-10-10T05:51:18+00:00"
     }
   ]
 }

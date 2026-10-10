@@ -1,5 +1,18 @@
 [
   {
+    "slug": "user-guide-examples-interactive-3d-assemblies",
+    "path": "blog/user-guide-examples-interactive-3d-assemblies.html",
+    "title": "Practical User Guide Examples for Interactive 3D and Hardware Assemblies",
+    "excerpt": "Discover effective user guide examples for mechanical assemblies and hardware products. Learn how step-by-step 3D manuals reduce assembly errors and improve documentation quality.",
+    "category": "Templates & examples",
+    "published": "2026-10-10",
+    "display_date": "October 10, 2026",
+    "primary_keyword": "user guide examples",
+    "keyword_cluster": "templates_and_examples",
+    "content_angle": "practical guide",
+    "image_path": "examples/agv.png"
+  },
+  {
     "slug": "software-instruction-manual-template-guide",
     "path": "blog/software-instruction-manual-template-guide.html",
     "title": "How to Build a Software Instruction Manual Template for 3D Product Documentation",
