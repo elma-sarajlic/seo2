@@ -1,5 +1,18 @@
 [
   {
+    "slug": "how-to-author-step-by-step-instructions",
+    "path": "blog/how-to-author-step-by-step-instructions.html",
+    "title": "How to Author Clear Step by Step Instructions with 3D CAD Models",
+    "excerpt": "A complete guide to planning, structuring, and authoring interactive step by step instructions for hardware products using 3D models and web-based tools.",
+    "category": "Digital manuals",
+    "published": "2026-10-11",
+    "display_date": "October 11, 2026",
+    "primary_keyword": "step by step instructions",
+    "keyword_cluster": "general_user_manuals_and_guides",
+    "content_angle": "practical guide",
+    "image_path": "assets/how-it-works-workshop.png"
+  },
+  {
     "slug": "user-guide-examples-interactive-3d-assemblies",
     "path": "blog/user-guide-examples-interactive-3d-assemblies.html",
     "title": "Practical User Guide Examples for Interactive 3D and Hardware Assemblies",
