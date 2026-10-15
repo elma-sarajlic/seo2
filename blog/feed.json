@@ -1,5 +1,18 @@
 [
   {
+    "slug": "instructions-for-assembly-guide",
+    "path": "blog/instructions-for-assembly-guide.html",
+    "title": "How to Build Interactive Instructions for Assembly: A Practical Hardware Guide",
+    "excerpt": "A practical guide for engineering and documentation teams to create interactive 3D instructions for assembly using CAD exports, step sequences, visual notes, and digital publishing tools.",
+    "category": "Assembly instructions",
+    "published": "2026-10-15",
+    "display_date": "October 15, 2026",
+    "primary_keyword": "instructions for assembly",
+    "keyword_cluster": "assembly_and_product_instructions",
+    "content_angle": "practical guide",
+    "image_path": "examples/sg90-servo.png"
+  },
+  {
     "slug": "how-to-author-step-by-step-instructions",
     "path": "blog/how-to-author-step-by-step-instructions.html",
     "title": "How to Author Clear Step by Step Instructions with 3D CAD Models",
