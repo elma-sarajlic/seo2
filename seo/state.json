@@ -1,5 +1,5 @@
 {
-  "last_cluster": "assembly_and_product_instructions",
+  "last_cluster": "software_and_tools",
   "generated": [
     {
       "keyword": "assembly instructions",
@@ -264,6 +264,14 @@
       "slug": "instructions-for-assembly-guide",
       "published": "2026-10-15",
       "generated_at": "2026-10-15T22:16:21+00:00"
+    },
+    {
+      "keyword": "user manual creation software",
+      "cluster": "software_and_tools",
+      "angle": "practical guide",
+      "slug": "user-manual-creation-software-guide",
+      "published": "2026-10-16",
+      "generated_at": "2026-10-16T23:49:20+00:00"
     }
   ]
 }

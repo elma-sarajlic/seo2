@@ -1,5 +1,18 @@
 [
   {
+    "slug": "user-manual-creation-software-guide",
+    "path": "blog/user-manual-creation-software-guide.html",
+    "title": "Guide to User Manual Creation Software for Visual Assembly Instructions",
+    "excerpt": "Learn how to evaluate and use user manual creation software to turn 3D CAD models into clear interactive assembly guides, WebM video clips, and printable PDFs.",
+    "category": "Tools & workflow",
+    "published": "2026-10-16",
+    "display_date": "October 16, 2026",
+    "primary_keyword": "user manual creation software",
+    "keyword_cluster": "software_and_tools",
+    "content_angle": "practical guide",
+    "image_path": "examples/arm.png"
+  },
+  {
     "slug": "instructions-for-assembly-guide",
     "path": "blog/instructions-for-assembly-guide.html",
     "title": "How to Build Interactive Instructions for Assembly: A Practical Hardware Guide",
